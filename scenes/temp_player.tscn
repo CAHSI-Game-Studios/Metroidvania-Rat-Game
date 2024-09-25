@@ -1,0 +1,91 @@
+[gd_scene load_steps=14 format=3 uid="uid://b4ar2jbo86jj5"]
+
+[ext_resource type="Script" path="res://scripts/temp_player.gd" id="1_a5hq4"]
+[ext_resource type="Texture2D" uid="uid://c6pm0j3lpibtb" path="res://assets/sprites/Toad_Idle.png" id="2_npgfc"]
+[ext_resource type="Texture2D" uid="uid://do6hi6eaikkui" path="res://assets/sprites/Toad_Walk.png" id="3_eoaxv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hq4h"]
+atlas = ExtResource("2_npgfc")
+region = Rect2(0, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r60n7"]
+atlas = ExtResource("2_npgfc")
+region = Rect2(80, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v0ybd"]
+atlas = ExtResource("2_npgfc")
+region = Rect2(160, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s3ymo"]
+atlas = ExtResource("2_npgfc")
+region = Rect2(240, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jn2n2"]
+atlas = ExtResource("3_eoaxv")
+region = Rect2(0, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rf25g"]
+atlas = ExtResource("3_eoaxv")
+region = Rect2(80, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lueja"]
+atlas = ExtResource("3_eoaxv")
+region = Rect2(160, 0, 80, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k60ai"]
+atlas = ExtResource("3_eoaxv")
+region = Rect2(240, 0, 80, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ksltw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hq4h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r60n7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v0ybd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s3ymo")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jn2n2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rf25g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lueja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k60ai")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ftrf2"]
+radius = 8.0
+
+[node name="Temp_player" type="CharacterBody2D" node_paths=PackedStringArray("animation")]
+collision_layer = 3
+script = ExtResource("1_a5hq4")
+animation = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ksltw")
+animation = &"idle"
+frame_progress = 0.440642
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -2)
+shape = SubResource("CapsuleShape2D_ftrf2")

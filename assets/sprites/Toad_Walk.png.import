@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4h3k0b2mkvbr"
-path="res://.godot/imported/deleteLater2.png-2f02c60fbefd2cceed700216ae0257b8.ctex"
+uid="uid://do6hi6eaikkui"
+path="res://.godot/imported/Toad_Walk.png-e45500ac3aea0721561161f268c4b3fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/deleteLater2.png"
-dest_files=["res://.godot/imported/deleteLater2.png-2f02c60fbefd2cceed700216ae0257b8.ctex"]
+source_file="res://assets/sprites/Toad_Walk.png"
+dest_files=["res://.godot/imported/Toad_Walk.png-e45500ac3aea0721561161f268c4b3fb.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct4m0vxgagfl7"
-path="res://.godot/imported/deleteLater3.png-757d498c9d8ad3d74cd43ed925387774.ctex"
+uid="uid://ds4uyx05x8h5w"
+path="res://.godot/imported/Toad_Damage.png-2c647ae27389a70b5d4cc1444ced9861.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scripts/deleteLater3.png"
-dest_files=["res://.godot/imported/deleteLater3.png-757d498c9d8ad3d74cd43ed925387774.ctex"]
+source_file="res://assets/sprites/Toad_Damage.png"
+dest_files=["res://.godot/imported/Toad_Damage.png-2c647ae27389a70b5d4cc1444ced9861.ctex"]
 
 [params]
 
