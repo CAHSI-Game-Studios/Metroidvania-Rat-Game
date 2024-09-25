@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=4 uid="uid://b7l7kne6d7apo"]
+
+[ext_resource type="Texture2D" uid="uid://b1x8jvicuktmq" path="res://assets/Floor.png" id="1_bf8qy"]
+[ext_resource type="PackedScene" uid="uid://ck80ayct1gnoj" path="res://scenes/rat.tscn" id="2_raihv"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_3h2j2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y60jf"]
+texture = ExtResource("1_bf8qy")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 3.5625, -8, 3.5625)
+
+[sub_resource type="TileSet" id="TileSet_xscie"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 2
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_3h2j2")
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+sources/1 = SubResource("TileSetAtlasSource_y60jf")
+
+[node name="map" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAABACgAAQAAAAAAAAACACgAAQAAAAAAAAADACgAAQAAAAAAAAAEACgAAQAAAAAAAAAFACgAAQAAAAAAAAAGACgAAQAAAAAAAAAHACgAAQAAAAAAAAAIACgAAQAAAAAAAAAJACgAAQAAAAAAAAAKACgAAQAAAAAAAAALACgAAQAAAAAAAAAMACgAAQAAAAAAAAANACgAAQAAAAAAAAAOACgAAQAAAAAAAAAPACgAAQAAAAAAAAAQACgAAQAAAAAAAAARACgAAQAAAAAAAAASACgAAQAAAAAAAAATACgAAQAAAAAAAAAUACgAAQAAAAAAAAAVACgAAQAAAAAAAAAWACgAAQAAAAAAAAAXACgAAQAAAAAAAAAYACgAAQAAAAAAAAAXACUAAQAAAAAAAAAYACUAAQAAAAAAAAAbACQAAQAAAAAAAAAcACQAAQAAAAAAAAAfACgAAQAAAAAAAAAgACgAAQAAAAAAAAAhACgAAQAAAAAAAAAiACgAAQAAAAAAAAAjACgAAQAAAAAAAAAkACgAAQAAAAAAAAAlACgAAQAAAAAAAAAAACgAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_xscie")
+
+[node name="rat" parent="." instance=ExtResource("2_raihv")]
+position = Vector2(11, 621)
