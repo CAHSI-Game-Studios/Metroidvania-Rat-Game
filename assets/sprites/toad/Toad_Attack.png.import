@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgjqyfgplc523"
-path="res://.godot/imported/Toad_Death.png-60cab68c7ddf5485ee91668f2c937a07.ctex"
+uid="uid://kf13iwpd3x46"
+path="res://.godot/imported/Toad_Attack.png-f59dcb0550bae1a33fae665f2bd1e87d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Toad_Death.png"
-dest_files=["res://.godot/imported/Toad_Death.png-60cab68c7ddf5485ee91668f2c937a07.ctex"]
+source_file="res://assets/sprites/toad/Toad_Attack.png"
+dest_files=["res://.godot/imported/Toad_Attack.png-f59dcb0550bae1a33fae665f2bd1e87d.ctex"]
 
 [params]
 

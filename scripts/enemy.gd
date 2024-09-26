@@ -10,6 +10,11 @@ var player_inattack_zone = false
 var can_take_damage = true
 
 func _physics_process(delta):
+	
+	# Add the gravity.
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+		
 	deal_with_damage()
 	
 	update_health()
@@ -26,6 +31,8 @@ func _physics_process(delta):
 			$AnimatedSprite2D.flip_h = false
 	else:
 		$AnimatedSprite2D.play("idle")
+		
+	move_and_slide()
 
 
 func _on_detection_area_body_entered(body):

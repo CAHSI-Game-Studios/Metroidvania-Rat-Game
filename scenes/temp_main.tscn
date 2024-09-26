@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cdkig12fyqfc3"]
 
-[ext_resource type="PackedScene" uid="uid://bpmw4187m4bue" path="res://scenes/entity.tscn" id="1_d4ypd"]
 [ext_resource type="PackedScene" uid="uid://b4ar2jbo86jj5" path="res://scenes/temp_player.tscn" id="2_35jyk"]
+[ext_resource type="PackedScene" uid="uid://cqpm20wim5luo" path="res://scenes/enemy.tscn" id="2_uxk6b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r4suy"]
 size = Vector2(1151, 243)
@@ -12,8 +12,11 @@ size = Vector2(1151, 243)
 position = Vector2(577, 524.5)
 shape = SubResource("RectangleShape2D_r4suy")
 
-[node name="Entity" parent="." instance=ExtResource("1_d4ypd")]
-position = Vector2(442, 388)
-
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_35jyk")]
 position = Vector2(574, 386)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(1.905, 1.905)
+
+[node name="Enemy" parent="." instance=ExtResource("2_uxk6b")]
+position = Vector2(412, 387)

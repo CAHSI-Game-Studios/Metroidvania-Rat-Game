@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgc6j0govsj6d"
-path="res://.godot/imported/slime magma zombie enemy CAHSI-1.png.png-a586e846becf0a45d61600e3f6da3a81.ctex"
+uid="uid://c6pm0j3lpibtb"
+path="res://.godot/imported/Toad_Idle.png-5a8e9ac7ca36fd33f41fb75ca8892e47.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://slime magma zombie enemy CAHSI-1.png.png"
-dest_files=["res://.godot/imported/slime magma zombie enemy CAHSI-1.png.png-a586e846becf0a45d61600e3f6da3a81.ctex"]
+source_file="res://assets/sprites/toad/Toad_Idle.png"
+dest_files=["res://.godot/imported/Toad_Idle.png-5a8e9ac7ca36fd33f41fb75ca8892e47.ctex"]
 
 [params]
 

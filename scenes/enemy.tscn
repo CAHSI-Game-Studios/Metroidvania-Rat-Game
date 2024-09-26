@@ -1,66 +1,66 @@
 [gd_scene load_steps=22 format=3 uid="uid://cqpm20wim5luo"]
 
-[ext_resource type="Texture2D" uid="uid://bgc6j0govsj6d" path="res://slime magma zombie enemy CAHSI-1.png.png" id="1_bfrxn"]
-[ext_resource type="Script" path="res://enemy.gd" id="1_by3lv"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_n5qex"]
+[ext_resource type="Texture2D" uid="uid://bgc6j0govsj6d" path="res://assets/sprites/slime/slime magma zombie enemy CAHSI-1.png.png" id="2_nqqj5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ptc4o"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(0, 384, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lampy"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(32, 384, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4510x"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(64, 384, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6mwlj"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(96, 384, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3i5ba"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(128, 384, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x64lv"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gb2gc"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_73dbj"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o8akk"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2eglf"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(0, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tpb3i"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(32, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i3md2"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(64, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8nv35"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(96, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_soxvt"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(128, 128, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l2jms"]
-atlas = ExtResource("1_bfrxn")
+atlas = ExtResource("2_nqqj5")
 region = Rect2(160, 128, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_i5dg4"]
@@ -135,7 +135,7 @@ radius = 6.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_8127e"]
 
 [node name="Enemy" type="CharacterBody2D"]
-script = ExtResource("1_by3lv")
+script = ExtResource("1_n5qex")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_i5dg4")

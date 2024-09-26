@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6pm0j3lpibtb"
-path="res://.godot/imported/Toad_Idle.png-e542e88a6a3d1ca31fb43bff2fbabecf.ctex"
+uid="uid://dis2fopbymi4q"
+path="res://.godot/imported/Toad_Static.png-b79704d453503761ee1aa7d2157d75c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Toad_Idle.png"
-dest_files=["res://.godot/imported/Toad_Idle.png-e542e88a6a3d1ca31fb43bff2fbabecf.ctex"]
+source_file="res://assets/sprites/toad/Toad_Static.png"
+dest_files=["res://.godot/imported/Toad_Static.png-b79704d453503761ee1aa7d2157d75c0.ctex"]
 
 [params]
 
