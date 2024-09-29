@@ -20,3 +20,6 @@ zoom = Vector2(1.905, 1.905)
 
 [node name="Enemy" parent="." instance=ExtResource("2_uxk6b")]
 position = Vector2(412, 387)
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, 401, 1, 642, 1154, 647, 1153, 405)

@@ -133,6 +133,7 @@ radius = 38.0
 radius = 6.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_8127e"]
+radius = 5.5354
 
 [node name="Enemy" type="CharacterBody2D"]
 script = ExtResource("1_n5qex")
@@ -155,6 +156,8 @@ position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_0atd0")
 
 [node name="enemy_hitbox" type="Area2D" parent="."]
+position = Vector2(0, -5)
+scale = Vector2(1, 0.296296)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="enemy_hitbox"]
 position = Vector2(0, -1)
@@ -164,11 +167,11 @@ shape = SubResource("CircleShape2D_8127e")
 wait_time = 0.5
 
 [node name="healthbar" type="ProgressBar" parent="."]
-modulate = Color(0.263066, 0.621451, 0.921589, 1)
-offset_left = -7.0
-offset_top = 6.0
-offset_right = 143.0
-offset_bottom = 33.0
+modulate = Color(0.192157, 0.709804, 0.129412, 1)
+offset_left = -8.0
+offset_top = -13.0
+offset_right = 142.0
+offset_bottom = 14.0
 scale = Vector2(0.1, 0.1)
 value = 100.0
 show_percentage = false

@@ -34,3 +34,6 @@ func _physics_process(delta: float) -> void:
 		animation.flip_h = false
 
 	move_and_slide()
+	
+func player():
+	pass
