@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://hrflbp25ybmd"]
+
+[ext_resource type="Texture2D" uid="uid://t7rpypknil7x" path="res://icon.svg" id="1_wadoc"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="2_6lhee"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6a1yb"]
+size = Vector2(419, 113)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vf4g5"]
+size = Vector2(73, 69)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(461, 467)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_6a1yb")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0.5, 0.5)
+scale = Vector2(3.24219, 0.867188)
+texture = ExtResource("1_wadoc")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(713, 399)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_6a1yb")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2"]
+position = Vector2(0.5, 0.5)
+scale = Vector2(3.24219, 0.867188)
+texture = ExtResource("1_wadoc")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(915, 289)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_6a1yb")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
+position = Vector2(0.5, 0.5)
+scale = Vector2(3.24219, 0.867188)
+texture = ExtResource("1_wadoc")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_6lhee")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(345.5, 265.5)
+shape = SubResource("RectangleShape2D_vf4g5")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(345.5, 265.5)
+scale = Vector2(0.601563, 0.585938)
+texture = ExtResource("1_wadoc")
