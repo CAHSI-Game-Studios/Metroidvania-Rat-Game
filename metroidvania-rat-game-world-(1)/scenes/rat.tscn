@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ck80ayct1gnoj"]
+
+[ext_resource type="Script" path="res://scripts/rat.gd" id="1_o2g3b"]
+[ext_resource type="Texture2D" uid="uid://de1sa7dph4boh" path="res://assets/sniper_rat_.png" id="2_qoep4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vfyhq"]
+
+[node name="rat" type="CharacterBody2D"]
+script = ExtResource("1_o2g3b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("2_qoep4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visibility_layer = 2
+shape = SubResource("CapsuleShape2D_vfyhq")
